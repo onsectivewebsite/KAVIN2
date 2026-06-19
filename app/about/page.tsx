@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { stats, team } from "@/lib/data";
+import { stats, agent, languages, specialties } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About — KAVIVIN Real Estate Calgary",
+  title: "About — Kavin Mittal Real Estate Calgary",
   description:
-    "KAVIVIN is Calgary's AI-powered residential and commercial real estate firm. Meet the team and our story.",
+    "Kavin Mittal is a Calgary residential and commercial real estate professional serving clients in English, Punjabi, Hindi, and Urdu.",
 };
 
 const values = [
@@ -27,7 +27,7 @@ export default function AboutPage() {
             Calgary born. <span className="gold-text">Globally minded.</span>
           </>
         }
-        subtitle="Founded in 2009, KAVIVIN set out to bring institutional-grade discipline and modern technology to the boutique brokerage experience."
+        subtitle="Kavin Mittal brings institutional-grade discipline and modern technology to a personal, client-first real estate experience in Calgary."
       />
 
       {/* Story split */}
@@ -46,27 +46,26 @@ export default function AboutPage() {
         <div>
           <span className="eyebrow">
             <span className="h-px w-6 bg-gold" />
-            Est. 2009 · Bankers Hall
+            Calgary, AB
           </span>
           <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-ivory">
-            A brokerage built for the next decade of Calgary.
+            Built for the next decade of Calgary real estate.
           </h2>
           <div className="mt-6 space-y-4 text-muted">
             <p>
-              KAVIVIN began with a simple conviction: clients deserve the
-              negotiating power of a major firm and the attentiveness of a family
-              advisor. Fifteen years and over $1.4B in closed volume later, that
-              conviction still drives every file.
+              Kavin Mittal works from a simple conviction: clients deserve the
+              negotiating power of a major firm and the attentiveness of a
+              personal advisor. That conviction drives every file.
             </p>
             <p>
-              We were among the first Alberta brokerages to build a dedicated AI
-              and market-intelligence practice — the same models now power the
-              valuation, matching, and financing tools you can use on this site.
+              Modern AI and market-intelligence tools — the same valuation,
+              matching, and financing tools you can use on this site — back every
+              recommendation with real Calgary data, not guesswork.
             </p>
             <p>
-              From a downtown retail flagship to a foothills estate, our
-              residential and commercial teams work as one — so wherever your
-              ambitions take you, you have a single trusted partner.
+              From a downtown condo to a foothills estate, residential and
+              commercial clients get a single trusted partner — fluent in
+              English, Punjabi, Hindi, and Urdu.
             </p>
           </div>
           <Link href="/contact" className="btn-gold mt-8">
@@ -119,44 +118,79 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Agent profile */}
       <section className="border-t border-white/[0.06] bg-ink-800 py-20">
         <div className="container-x">
           <div className="mx-auto max-w-2xl text-center">
             <span className="eyebrow justify-center">
               <span className="h-px w-6 bg-gold" />
-              The People
+              Your Advisor
             </span>
             <h2 className="mt-4 font-display text-4xl font-semibold text-ivory md:text-5xl">
-              Advisors you&apos;ll actually know
+              Meet Kavin Mittal
             </h2>
           </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {team.map((m, i) => (
-              <Reveal key={m.name} delay={i * 90}>
-                <div className="group overflow-hidden rounded-2xl border border-white/[0.06] bg-ink-900/60">
-                  <div className="relative aspect-[3/4] overflow-hidden">
-                    <Image
-                      src={m.image}
-                      alt={m.name}
-                      fill
-                      sizes="25vw"
-                      className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-transparent to-transparent" />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-lg text-ivory">{m.name}</h3>
-                    <p className="text-[11px] uppercase tracking-widest text-gold">
-                      {m.role}
-                    </p>
-                    <p className="mt-3 text-sm leading-relaxed text-muted">
-                      {m.bio}
-                    </p>
-                  </div>
+
+          <div className="mt-14 grid items-start gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+            <Reveal>
+              <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-white/[0.06] bg-ink-900/60">
+                <Image
+                  src={agent.image}
+                  alt={agent.name}
+                  fill
+                  sizes="(min-width: 1024px) 30vw, 90vw"
+                  className="object-cover grayscale transition-all duration-500 hover:grayscale-0"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-transparent to-transparent" />
+              </div>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <div>
+                <h3 className="font-display text-2xl text-ivory">{agent.name}</h3>
+                <p className="mt-1 text-[11px] uppercase tracking-widest text-gold">
+                  {agent.role}
+                </p>
+                <p className="mt-5 leading-relaxed text-muted">{agent.bio}</p>
+
+                <h4 className="mt-8 text-[11px] font-semibold uppercase tracking-[0.25em] text-gold">
+                  Specialties
+                </h4>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {specialties.map((s) => (
+                    <span
+                      key={s}
+                      className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-ivory/85"
+                    >
+                      {s}
+                    </span>
+                  ))}
                 </div>
-              </Reveal>
-            ))}
+
+                <h4 className="mt-7 text-[11px] font-semibold uppercase tracking-[0.25em] text-gold">
+                  Languages
+                </h4>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {languages.map((l) => (
+                    <span
+                      key={l}
+                      className="rounded-full border border-gold/30 bg-gold/[0.06] px-3 py-1.5 text-xs text-gold"
+                    >
+                      {l}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-9 flex flex-wrap gap-4">
+                  <Link href="/contact" className="btn-gold">
+                    Work with Kavin
+                  </Link>
+                  <Link href="/listings" className="btn-ghost">
+                    View listings
+                  </Link>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>

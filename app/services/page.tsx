@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Services — KAVIVIN Real Estate Calgary",
+  title: "Services — Kavin Mittal Real Estate Calgary",
   description:
     "Buying, selling, commercial brokerage, investment advisory, and property management across Calgary and Alberta.",
 };
@@ -114,7 +114,7 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-2xl text-center">
             <span className="eyebrow justify-center">
               <span className="h-px w-6 bg-gold" />
-              The KAVIVIN Method
+              The Kavin Mittal Method
             </span>
             <h2 className="mt-4 font-display text-4xl font-semibold text-ivory md:text-5xl">
               A process built around you

@@ -11,7 +11,7 @@ export interface QA {
 export const faqs: QA[] = [
   {
     category: "Buying",
-    q: "How do I start buying a home with KAVIVIN?",
+    q: "How do I start buying a home with Kavin Mittal?",
     a: "Start by telling us your budget, preferred neighbourhoods, and must-haves — or run the AI Property Matcher on the AI Tools page. We then book a discovery call, set up a tailored search (including off-market listings), and guide you through viewings, offers, and closing.",
     keywords: ["start", "begin", "buy", "buying", "first", "how do i buy"],
   },
@@ -30,7 +30,7 @@ export const faqs: QA[] = [
   {
     category: "Buying",
     q: "Do you have access to off-market listings?",
-    a: "Yes. A meaningful share of our luxury and commercial transactions never hit the public MLS. As a registered KAVIVIN buyer you get first look at qualifying off-market opportunities before they're advertised.",
+    a: "Yes. A meaningful share of luxury and commercial transactions never hit the public MLS. As a registered buyer you get first look at qualifying off-market opportunities before they're advertised.",
     keywords: ["off-market", "off market", "exclusive", "pocket listing", "private listing"],
   },
   {
@@ -42,12 +42,12 @@ export const faqs: QA[] = [
   {
     category: "Selling",
     q: "How long does it take to sell?",
-    a: "KAVIVIN homes sell in an average of 9 days at a 98.6% list-to-sale ratio. Timelines vary by price point and season, but our data-led pricing and cinematic marketing are built to minimize days on market.",
+    a: "Timelines vary by price point and season, but data-led pricing and professional marketing are built to minimize days on market. Book a listing consultation for a realistic timeline on your specific home.",
     keywords: ["how long", "days on market", "sell fast", "time to sell", "quickly"],
   },
   {
     category: "Selling",
-    q: "What does KAVIVIN charge in commission?",
+    q: "What does Kavin Mittal charge in commission?",
     a: "Commission depends on the service level and property type, and is always agreed in writing up front — no surprises. We'll walk you through exactly what's included (staging, media, marketing, negotiation) at your listing consultation.",
     keywords: ["commission", "fee", "cost", "charge", "how much do you charge", "rate"],
   },
@@ -78,7 +78,7 @@ export const faqs: QA[] = [
   {
     category: "Commercial",
     q: "Do you handle commercial real estate?",
-    a: "Yes — KAVIVIN has a dedicated commercial team covering office, retail, and industrial across Calgary, with $400M+ transacted. We represent both tenants and landlords for leasing, acquisition, and disposition. Toggle 'Commercial' on the Listings page to browse current opportunities.",
+    a: "Yes — Kavin Mittal handles commercial real estate covering office, retail, and industrial across Calgary, representing both tenants and landlords for leasing, acquisition, and disposition. Toggle 'Commercial' on the Listings page to browse current opportunities.",
     keywords: ["commercial", "office", "retail", "industrial", "lease", "warehouse", "business"],
   },
   {
@@ -89,8 +89,8 @@ export const faqs: QA[] = [
   },
   {
     category: "About",
-    q: "Where is KAVIVIN located?",
-    a: "Our office is Suite 1800, Bankers Hall, 855 2nd Street SW, Calgary, AB T2P 4J7. Call +1 (403) 555-0199 or email hello@kavivin.ca — advisors typically respond within the hour.",
+    q: "Where is Kavin Mittal located?",
+    a: "The office is at 12318 Barlow Trail NE, Unit 105, Calgary, AB T3N 2A9. Call (403) 430-0050 or email Kavinmittal9@gmail.com — Kavin typically responds within the hour. Service is available in English, Punjabi, Hindi, and Urdu.",
     keywords: ["location", "office", "address", "where are you", "phone", "call", "contact", "email", "hours"],
   },
   {
@@ -108,7 +108,7 @@ const fallback =
 export function localAnswer(input: string): string {
   const q = input.toLowerCase();
   if (/^(hi|hello|hey|yo|hallo)\b/.test(q.trim()))
-    return "Hi, I'm Aurum, KAVIVIN's local assistant. Ask me about valuations, buying, selling, financing, or commercial real estate in Calgary — everything I answer runs right here, no account needed.";
+    return "Hi, I'm Aurum, Kavin Mittal's local assistant. Ask me about valuations, buying, selling, financing, or commercial real estate in Calgary — everything I answer runs right here, no account needed.";
   if (/(thank|thanks|cheers)/.test(q))
     return "You're very welcome! Anything else I can help with — a valuation, a listing, or connecting you with an advisor?";
 

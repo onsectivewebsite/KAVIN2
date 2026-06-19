@@ -295,7 +295,7 @@ export const featuredProperties = properties.filter((p) => p.featured);
 export const testimonials = [
   {
     quote:
-      "KAVIVIN sold our Mission condo $90K over ask in nine days. The AI valuation was within 1% of the final price — uncanny.",
+      "Kavin sold our Mission condo $90K over ask in nine days. The AI valuation was within 1% of the final price — uncanny.",
     name: "Priya & Daniel R.",
     role: "Sellers — Mission",
   },
@@ -320,32 +320,38 @@ export const stats = [
   { value: "98.6%", label: "List-to-sale ratio" },
 ];
 
-export const team = [
-  {
-    name: "Kavi Vinodh",
-    role: "Founder & Principal Broker",
-    bio: "20 years across Calgary's residential and commercial markets, named to Alberta's Top 1% three years running.",
-    image: img("photo-1560250097-0b93528c311a", 600),
-  },
-  {
-    name: "Amara Singh",
-    role: "Director, Commercial",
-    bio: "Specialist in retail and office investment, with $400M+ in transacted assets across the downtown core.",
-    image: img("photo-1573496359142-b8d87734a5a2", 600),
-  },
-  {
-    name: "Ethan Brooks",
-    role: "Head of Luxury Residential",
-    bio: "Estate and penthouse advisor for Aspen Woods, Mount Royal, and Elbow Park clientele.",
-    image: img("photo-1500648767791-00dcc994a43e", 600),
-  },
-  {
-    name: "Lena Petrov",
-    role: "Director, AI & Market Intelligence",
-    bio: "Leads KAVIVIN's data science practice, building the valuation and matching models behind every recommendation.",
-    image: img("photo-1580489944761-15a19d654956", 600),
-  },
+// ── Real contact & profile data ──────────────────────────────
+export const contact = {
+  name: "Kavin Mittal",
+  phone: "(403) 430-0050",
+  phoneHref: "+14034300050",
+  email: "Kavinmittal9@gmail.com",
+  addressLines: ["12318 Barlow Trail NE, Unit 105", "Calgary, AB T3N 2A9"],
+  mapQuery: "12318 Barlow Trail NE Unit 105, Calgary, AB T3N 2A9",
+};
+
+export const languages = ["English", "Punjabi", "Hindi", "Urdu"];
+
+export const specialties = [
+  "Residential Brokerage",
+  "Consulting",
+  "Residential Development",
+  "Residential Valuation",
+  "Investment",
+  "Residential Relocation",
+  "Multi-Family",
+  "Luxury Homes",
+  "Condos",
 ];
+
+export const agent = {
+  name: "Kavin Mittal",
+  role: "REALTOR® · Calgary, AB",
+  bio: "Kavin Mittal is a Calgary-based real estate professional serving buyers, sellers, and investors across the city. He works with clients in English, Punjabi, Hindi, and Urdu, with expertise spanning luxury homes, condos, multi-family, residential development, and investment.",
+  image: img("photo-1560250097-0b93528c311a", 600),
+  languages,
+  specialties,
+};
 
 export const neighbourhoodFactors: Record<string, number> = {
   Mission: 825,

@@ -52,7 +52,7 @@ export default function Home() {
             <div className="animate-fade-up">
               <span className="eyebrow">
                 <span className="h-px w-6 bg-gold" />
-                Calgary · Alberta · Est. 2009
+                Calgary · Alberta · Kavin Mittal
               </span>
             </div>
             <h1
@@ -69,9 +69,9 @@ export default function Home() {
               className="mt-7 max-w-lg text-lg leading-relaxed text-ivory/70 animate-fade-up"
               style={{ animationDelay: "0.25s", opacity: 0 }}
             >
-              KAVIVIN pairs concierge-level residential &amp; commercial expertise
-              with an AI suite that values, matches, and finances — faster than
-              any brokerage in Alberta.
+              Kavin Mittal pairs concierge-level residential &amp; commercial
+              expertise with an AI suite that values, matches, and finances —
+              faster than any brokerage in Alberta.
             </p>
             <div
               className="mt-9 flex flex-wrap gap-4 animate-fade-up"
@@ -183,13 +183,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY KAVIVIN — split */}
+      {/* WHY KAVIN MITTAL — split */}
       <section className="container-x grid items-center gap-14 py-24 lg:grid-cols-2">
         <Reveal>
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
             <Image
               src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
-              alt="KAVIVIN interior"
+              alt="Luxury Calgary interior"
               fill
               className="object-cover"
             />
@@ -205,7 +205,7 @@ export default function Home() {
 
         <div>
           <SectionHeader
-            eyebrow="Why KAVIVIN"
+            eyebrow="Why Kavin Mittal"
             title="Boutique attention. Institutional results."
             subtitle="We're large enough to move markets and small enough to know your name. Every client works directly with a principal advisor — backed by data, not guesswork."
           />
@@ -278,7 +278,7 @@ export default function Home() {
                 <span className="gold-text">address.</span>
               </h2>
               <p className="mt-5 text-lg text-ivory/70">
-                Book a private consultation with a KAVIVIN advisor — or start with
+                Book a private consultation with Kavin Mittal — or start with
                 a free AI valuation in under a minute.
               </p>
               <div className="mt-9 flex flex-wrap justify-center gap-4">

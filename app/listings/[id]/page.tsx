@@ -19,7 +19,7 @@ export async function generateMetadata({
   const { id } = await params;
   const p = getProperty(id);
   return {
-    title: p ? `${p.title} — KAVIVIN` : "Listing — KAVIVIN",
+    title: p ? `${p.title} — Kavin Mittal` : "Listing — Kavin Mittal",
     description: p?.blurb,
   };
 }
@@ -175,18 +175,18 @@ export default async function PropertyPage({
             <div className="space-y-4 p-7">
               <div className="flex items-center gap-3">
                 <span className="grid h-12 w-12 place-items-center rounded-full bg-gold-gradient font-display font-bold text-ink-900">
-                  KV
+                  KM
                 </span>
                 <div>
-                  <p className="font-semibold text-ivory">KAVIVIN Advisor</p>
-                  <p className="text-sm text-muted">Listing team</p>
+                  <p className="font-semibold text-ivory">Kavin Mittal</p>
+                  <p className="text-sm text-muted">REALTOR® · Calgary</p>
                 </div>
               </div>
               <Link href="/contact" className="btn-gold w-full">
                 Request a private tour
               </Link>
-              <a href="tel:+14035550199" className="btn-ghost w-full">
-                Call +1 (403) 555-0199
+              <a href="tel:+14034300050" className="btn-ghost w-full">
+                Call (403) 430-0050
               </a>
               <p className="text-center text-xs text-muted">
                 Typical response within the hour

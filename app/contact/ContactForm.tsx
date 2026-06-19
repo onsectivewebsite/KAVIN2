@@ -18,8 +18,8 @@ export default function ContactForm() {
           Thank you — message received.
         </h3>
         <p className="mt-2 max-w-sm text-muted">
-          A KAVIVIN advisor will be in touch within the hour. In the meantime,
-          try our AI valuation or browse the portfolio.
+          Kavin Mittal will be in touch within the hour. In the meantime,
+          try the AI valuation or browse the portfolio.
         </p>
         <button
           onClick={() => setSent(false)}
@@ -41,7 +41,7 @@ export default function ContactForm() {
     >
       <div className="grid gap-5 sm:grid-cols-2">
         <Input label="Full name" name="name" placeholder="Jane Doe" required />
-        <Input label="Phone" name="phone" placeholder="+1 (403) 555-0123" />
+        <Input label="Phone" name="phone" placeholder="(403) 555-0123" />
       </div>
       <Input
         label="Email"

@@ -2,17 +2,19 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import ContactForm from "./ContactForm";
+import { contact, languages } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Contact — KAVIVIN Real Estate Calgary",
+  title: "Contact — Kavin Mittal Real Estate Calgary",
   description:
-    "Book a consultation with a KAVIVIN advisor. Suite 1800, Bankers Hall, downtown Calgary.",
+    "Book a consultation with Kavin Mittal. 12318 Barlow Trail NE, Unit 105, Calgary, AB.",
 };
 
 const details = [
-  ["Visit", ["Suite 1800, Bankers Hall", "855 2nd Street SW", "Calgary, AB T2P 4J7"]],
-  ["Call", ["+1 (403) 555-0199", "Mon–Sat · 8am–7pm MT"]],
-  ["Email", ["hello@kavivin.ca", "advisors@kavivin.ca"]],
+  ["Visit", contact.addressLines],
+  ["Call", [contact.phone]],
+  ["Email", [contact.email]],
+  ["Languages", [languages.join(" · ")]],
 ] as const;
 
 export default function ContactPage() {
@@ -25,7 +27,7 @@ export default function ContactPage() {
             Let&apos;s start the <span className="gold-text">conversation.</span>
           </>
         }
-        subtitle="Tell us what you're looking for and a KAVIVIN advisor will respond within the hour — typically much sooner."
+        subtitle="Tell us what you're looking for and Kavin Mittal will respond within the hour — typically much sooner."
       />
 
       <section className="container-x grid gap-12 py-20 lg:grid-cols-[1fr_1.2fr]">
@@ -65,7 +67,7 @@ export default function ContactPage() {
                     ◉
                   </div>
                   <p className="mt-3 font-display text-lg text-ivory">
-                    Bankers Hall, Downtown Calgary
+                    Barlow Trail NE, Calgary
                   </p>
                 </div>
               </div>

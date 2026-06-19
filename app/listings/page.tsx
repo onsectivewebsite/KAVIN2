@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero";
 import ListingsClient from "./ListingsClient";
 
 export const metadata: Metadata = {
-  title: "Listings — KAVIVIN Real Estate Calgary",
+  title: "Listings — Kavin Mittal Real Estate Calgary",
   description:
     "Browse luxury residential homes and commercial assets across Calgary. Filter by price, beds, and category.",
 };

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { contact, languages } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -9,8 +10,12 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-              Calgary&apos;s AI-powered residential &amp; commercial real estate
-              firm. Refined advice, remarkable results — across Alberta.
+              Calgary residential &amp; commercial real estate. Refined advice,
+              remarkable results — across Alberta.
+            </p>
+            <p className="mt-4 text-xs text-muted">
+              <span className="text-gold">Languages:</span>{" "}
+              {languages.join(" · ")}
             </p>
             <div className="mt-6 flex gap-3">
               {["IG", "LI", "X", "YT"].map((s) => (
@@ -49,20 +54,23 @@ export default function Footer() {
               Office
             </h4>
             <ul className="mt-5 space-y-3 text-sm text-muted">
-              <li>Suite 1800, Bankers Hall</li>
-              <li>855 2nd Street SW</li>
-              <li>Calgary, AB T2P 4J7</li>
+              {contact.addressLines.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
               <li className="pt-2">
-                <a href="tel:+14035550199" className="link-underline text-ivory">
-                  +1 (403) 555-0199
+                <a
+                  href={`tel:${contact.phoneHref}`}
+                  className="link-underline text-ivory"
+                >
+                  {contact.phone}
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:hello@kavivin.ca"
+                  href={`mailto:${contact.email}`}
                   className="link-underline text-ivory"
                 >
-                  hello@kavivin.ca
+                  {contact.email}
                 </a>
               </li>
             </ul>
@@ -72,7 +80,7 @@ export default function Footer() {
         <div className="hairline my-10" />
 
         <div className="flex flex-col items-center justify-between gap-4 text-xs text-muted md:flex-row">
-          <p>© {new Date().getFullYear()} KAVIVIN Real Estate Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kavin Mittal Real Estate. All rights reserved.</p>
           <p className="text-center">
             Independently owned &amp; operated · CREB® Member · Licensed in Alberta
           </p>

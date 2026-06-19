@@ -146,7 +146,7 @@ export default function HomeValuation() {
                 Your estimate appears here
               </p>
               <p className="mt-2 text-sm text-muted">
-                Powered by KAVIVIN&apos;s Calgary pricing model — trained on local
+                Powered by a Calgary pricing model — trained on local
                 comparables.
               </p>
             </div>
@@ -188,8 +188,8 @@ export default function HomeValuation() {
                 {hood} is currently a{" "}
                 {neighbourhoodFactors[hood] > 650 ? "seller's" : "balanced"}{" "}
                 market. Homes of this profile are selling near{" "}
-                <span className="text-ivory">98.6%</span> of list. Book a KAVIVIN
-                advisor to refine this with live comparables.
+                <span className="text-ivory">98.6%</span> of list. Book a session
+                with Kavin Mittal to refine this with live comparables.
               </div>
 
               <a href="/contact" className="btn-ghost mt-5 w-full">

@@ -24,7 +24,7 @@ export default function ChatAssistant() {
   const [msgs, setMsgs] = useState<Msg[]>([
     {
       role: "ai",
-      text: "Hi, I'm Aurum — KAVIVIN's AI concierge. Ask me about valuations, listings, or financing in Calgary.",
+      text: "Hi, I'm Aurum — Kavin Mittal's AI concierge. Ask me about valuations, listings, or financing in Calgary.",
     },
   ]);
   const endRef = useRef<HTMLDivElement>(null);

@@ -19,14 +19,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "KAVIVIN — Luxury Real Estate in Calgary",
+  title: "Kavin Mittal — Luxury Real Estate in Calgary",
   description:
-    "KAVIVIN is Calgary's premier residential & commercial real estate firm. AI-powered home valuation, property matching, and concierge service across Alberta.",
+    "Kavin Mittal is a Calgary residential & commercial REALTOR® offering AI-powered home valuation, property matching, and concierge service across Alberta. Serving clients in English, Punjabi, Hindi, and Urdu.",
   keywords: [
     "Calgary real estate",
     "luxury homes Calgary",
     "commercial real estate Alberta",
-    "KAVIVIN",
+    "Kavin Mittal",
+    "Calgary realtor",
     "AI home valuation",
   ],
 };

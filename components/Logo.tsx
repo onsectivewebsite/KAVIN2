@@ -9,11 +9,11 @@ export default function Logo({ compact = false }: { compact?: boolean }) {
       </span>
       {!compact && (
         <span className="flex flex-col leading-none">
-          <span className="font-display text-lg font-semibold tracking-[0.18em] text-ivory">
-            KAVIVIN
+          <span className="font-display text-lg font-semibold tracking-[0.12em] text-ivory">
+            KAVIN MITTAL
           </span>
-          <span className="text-[9px] font-medium uppercase tracking-[0.42em] text-muted">
-            Real Estate
+          <span className="text-[9px] font-medium uppercase tracking-[0.32em] text-muted">
+            Real Estate · Calgary
           </span>
         </span>
       )}

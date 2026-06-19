@@ -7,9 +7,9 @@ import MortgageCalculator from "@/components/ai/MortgageCalculator";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "AI Tools — KAVIVIN Real Estate Calgary",
+  title: "AI Tools — Kavin Mittal Real Estate Calgary",
   description:
-    "AI Home Valuation, Property Matcher, Mortgage Calculator, and the Aurum concierge — KAVIVIN's intelligence suite for Calgary real estate.",
+    "AI Home Valuation, Property Matcher, Mortgage Calculator, and the Aurum concierge — Kavin Mittal's intelligence suite for Calgary real estate.",
 };
 
 const nav = [
@@ -63,7 +63,7 @@ export default function AIToolsPage() {
         id="matcher"
         num="02"
         title="AI Property Matcher"
-        desc="Share your budget and must-haves. Our model ranks every live KAVIVIN listing to your brief and explains why each one fits."
+        desc="Share your budget and must-haves. The model ranks every live listing to your brief and explains why each one fits."
         alt
       >
         <PropertyMatcher />
