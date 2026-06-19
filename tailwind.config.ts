@@ -25,8 +25,8 @@ const config: Config = {
         muted: "#9B968C",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
-        sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
+        display: ["var(--font-playfair)", "Georgia", "serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       boxShadow: {
         gold: "0 0 0 1px rgba(201,161,74,0.25), 0 20px 60px -20px rgba(201,161,74,0.35)",
