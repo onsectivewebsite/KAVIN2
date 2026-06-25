@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import HomeValuation from "@/components/ai/HomeValuation";
-import PropertyMatcher from "@/components/ai/PropertyMatcher";
 import MortgageCalculator from "@/components/ai/MortgageCalculator";
 import FAQ from "@/components/FAQ";
 
@@ -14,7 +13,6 @@ export const metadata: Metadata = {
 
 const nav = [
   ["valuation", "Home Valuation"],
-  ["matcher", "Property Matcher"],
   ["mortgage", "Mortgage Calculator"],
   ["assistant", "AI Concierge"],
   ["faq", "Quick Answers"],
@@ -58,22 +56,12 @@ export default function AIToolsPage() {
         <HomeValuation />
       </Tool>
 
-      {/* Matcher */}
-      <Tool
-        id="matcher"
-        num="02"
-        title="AI Property Matcher"
-        desc="Share your budget and must-haves. The model ranks every live listing to your brief and explains why each one fits."
-        alt
-      >
-        <PropertyMatcher />
-      </Tool>
-
       {/* Mortgage */}
       <Tool
         id="mortgage"
-        num="03"
+        num="02"
         title="AI Mortgage Calculator"
+        alt
         desc="Move the sliders to see payments, interest, and CMHC insurance — plus a live affordability read against Canadian lending ratios."
       >
         <MortgageCalculator />
@@ -82,10 +70,9 @@ export default function AIToolsPage() {
       {/* Assistant */}
       <Tool
         id="assistant"
-        num="04"
+        num="03"
         title="Aurum — AI Concierge"
         desc="A 24/7 assistant that answers buyer and seller questions, points you to the right tool, and connects you with an advisor."
-        alt
       >
         <div className="card-glass relative overflow-hidden p-10 text-center">
           <div className="absolute inset-0 bg-radial-gold opacity-50" />
@@ -123,9 +110,10 @@ export default function AIToolsPage() {
       {/* FAQ — fully local, no AI */}
       <Tool
         id="faq"
-        num="05"
+        num="04"
         title="Quick Answers"
         desc="Common questions about buying, selling, financing, and commercial real estate in Calgary — answered instantly, right here. Search or filter by topic."
+        alt
       >
         <FAQ />
       </Tool>

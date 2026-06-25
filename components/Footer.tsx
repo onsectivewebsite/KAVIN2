@@ -44,7 +44,6 @@ export default function Footer() {
             title="AI Suite"
             links={[
               ["Home Valuation", "/ai-tools#valuation"],
-              ["Property Matcher", "/ai-tools#matcher"],
               ["Mortgage Calculator", "/ai-tools#mortgage"],
               ["Ask the Assistant", "/ai-tools#assistant"],
             ]}

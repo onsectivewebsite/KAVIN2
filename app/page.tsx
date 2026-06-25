@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
-import PropertyCard from "@/components/PropertyCard";
 import EventCard from "@/components/EventCard";
-import { featuredProperties, eventsByDate } from "@/lib/data";
+import { eventsByDate, realtorProfileUrl } from "@/lib/data";
 
 const aiTools = [
   {
@@ -12,12 +11,6 @@ const aiTools = [
     title: "AI Home Valuation",
     desc: "Instant, comparable-driven estimate of what your property commands today.",
     href: "/ai-tools#valuation",
-  },
-  {
-    icon: "◎",
-    title: "AI Property Matcher",
-    desc: "Tell us your brief — we rank the Calgary market to your exact must-haves.",
-    href: "/ai-tools#matcher",
   },
   {
     icon: "▤",
@@ -94,33 +87,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURED LISTINGS */}
+      {/* LISTINGS — Realtor.ca */}
       <section className="container-x py-24">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHeader
-            eyebrow="Featured Portfolio"
-            title={
-              <>
-                Distinctive homes &amp;
-                <br />
-                commercial assets
-              </>
-            }
-          />
-          <Reveal delay={150}>
-            <Link href="/listings" className="btn-ghost">
-              View all listings →
-            </Link>
-          </Reveal>
-        </div>
-
-        <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {featuredProperties.slice(0, 6).map((p, i) => (
-            <Reveal key={p.id} delay={i * 80}>
-              <PropertyCard property={p} />
-            </Reveal>
-          ))}
-        </div>
+        <Reveal>
+          <div className="relative overflow-hidden rounded-3xl border border-gold/20 bg-ink-800 p-12 text-center md:p-16">
+            <div className="absolute inset-0 bg-radial-gold opacity-60" />
+            <div className="relative mx-auto max-w-2xl">
+              <span className="eyebrow justify-center">
+                <span className="h-px w-6 bg-gold" />
+                The Portfolio
+              </span>
+              <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-ivory md:text-5xl">
+                Every listing, <span className="gold-text">always current</span>
+              </h2>
+              <p className="mx-auto mt-5 max-w-lg text-lg text-ivory/70">
+                Kavin&apos;s active residential and commercial listings live on
+                Realtor.ca — updated in real time, straight from the source.
+              </p>
+              <div className="mt-9 flex flex-wrap justify-center gap-4">
+                <a
+                  href={realtorProfileUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gold"
+                >
+                  Browse listings on Realtor.ca →
+                </a>
+                <Link href="/contact" className="btn-ghost">
+                  Ask about a property
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       {/* AI SUITE */}
@@ -140,7 +139,7 @@ export default function Home() {
             subtitle="Four tools, trained on Calgary's market, working for you around the clock — no logins, no waiting."
           />
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {aiTools.map((t, i) => (
               <Reveal key={t.title} delay={i * 90}>
                 <Link

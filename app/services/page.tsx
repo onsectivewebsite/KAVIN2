@@ -14,8 +14,8 @@ const services = [
     icon: "⌂",
     title: "Buying",
     tag: "Residential",
-    desc: "From first homes to estates, we negotiate hard and guide you from search to keys with an AI-matched shortlist.",
-    points: ["AI property matching", "Off-market access", "Negotiation strategy", "Closing concierge"],
+    desc: "From first homes to estates, we negotiate hard and guide you from search to keys with a curated shortlist.",
+    points: ["Curated shortlist", "Off-market access", "Negotiation strategy", "Closing concierge"],
   },
   {
     icon: "✦",
