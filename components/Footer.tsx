@@ -35,6 +35,7 @@ export default function Footer() {
             links={[
               ["Listings", "/listings"],
               ["Services", "/services"],
+              ["Events", "/events"],
               ["AI Tools", "/ai-tools"],
               ["About", "/about"],
             ]}

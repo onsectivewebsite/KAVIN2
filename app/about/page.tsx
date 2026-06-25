@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { stats, agent, languages, specialties } from "@/lib/data";
+import { agent, languages, specialties } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "About — Kavin Mittal Real Estate Calgary",
@@ -71,24 +71,6 @@ export default function AboutPage() {
           <Link href="/contact" className="btn-gold mt-8">
             Work with us
           </Link>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="border-y border-white/[0.06] bg-ink-800">
-        <div className="container-x grid grid-cols-2 gap-8 py-14 md:grid-cols-4">
-          {stats.map((s, i) => (
-            <Reveal key={s.label} delay={i * 90}>
-              <div className="text-center">
-                <p className="font-display text-4xl font-semibold gold-text md:text-5xl">
-                  {s.value}
-                </p>
-                <p className="mt-2 text-xs uppercase tracking-[0.2em] text-muted">
-                  {s.label}
-                </p>
-              </div>
-            </Reveal>
-          ))}
         </div>
       </section>
 

@@ -21,7 +21,7 @@ const services = [
     icon: "✦",
     title: "Selling",
     tag: "Residential",
-    desc: "Data-driven pricing, cinematic marketing, and a 98.6% list-to-sale ratio that moves homes in an average of 9 days.",
+    desc: "Data-driven pricing, cinematic marketing, and a sharp negotiation strategy built to move your home for its best price.",
     points: ["AI valuation + CMA", "Staging & media", "Targeted campaigns", "Multiple-offer management"],
   },
   {

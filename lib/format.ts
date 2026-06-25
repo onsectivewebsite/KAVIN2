@@ -12,3 +12,12 @@ export const formatNumber = (n: number) =>
 
 export const displayPrice = (price: number, status: string) =>
   status === "For Lease" ? formatPrice(price, true) : formatPrice(price);
+
+export const formatEventDate = (iso: string) =>
+  new Intl.DateTimeFormat("en-CA", {
+    weekday: "short",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${iso}T00:00:00Z`));

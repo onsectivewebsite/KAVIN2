@@ -3,7 +3,8 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
 import PropertyCard from "@/components/PropertyCard";
-import { featuredProperties, stats, testimonials } from "@/lib/data";
+import EventCard from "@/components/EventCard";
+import { featuredProperties, eventsByDate } from "@/lib/data";
 
 const aiTools = [
   {
@@ -93,24 +94,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="border-y border-white/[0.06] bg-ink-800">
-        <div className="container-x grid grid-cols-2 gap-8 py-14 md:grid-cols-4">
-          {stats.map((s, i) => (
-            <Reveal key={s.label} delay={i * 100}>
-              <div className="text-center md:text-left">
-                <p className="font-display text-4xl font-semibold gold-text md:text-5xl">
-                  {s.value}
-                </p>
-                <p className="mt-2 text-xs uppercase tracking-[0.2em] text-muted">
-                  {s.label}
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* FEATURED LISTINGS */}
       <section className="container-x py-24">
         <div className="flex flex-wrap items-end justify-between gap-6">
@@ -194,12 +177,6 @@ export default function Home() {
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 card-glass p-5">
-              <p className="font-display text-2xl gold-text">98.6%</p>
-              <p className="text-sm text-muted">
-                Average list-to-sale ratio across our Calgary portfolio
-              </p>
-            </div>
           </div>
         </Reveal>
 
@@ -240,32 +217,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="border-y border-white/[0.06] bg-ink-800 py-24">
-        <div className="container-x">
-          <SectionHeader
-            align="center"
-            eyebrow="Client Voices"
-            title="Trusted across Alberta"
-          />
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <Reveal key={t.name} delay={i * 110}>
-                <figure className="flex h-full flex-col rounded-2xl border border-white/[0.06] bg-ink-900/60 p-8">
-                  <div className="mb-4 text-gold">{"★".repeat(5)}</div>
-                  <blockquote className="flex-1 font-display text-lg leading-relaxed text-ivory/90">
-                    “{t.quote}”
-                  </blockquote>
-                  <figcaption className="mt-6 border-t border-white/[0.06] pt-4">
-                    <p className="font-semibold text-ivory">{t.name}</p>
-                    <p className="text-sm text-muted">{t.role}</p>
-                  </figcaption>
-                </figure>
+      {/* EVENTS */}
+      {eventsByDate.length > 0 && (
+        <section className="border-y border-white/[0.06] bg-ink-800 py-24">
+          <div className="container-x">
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <SectionHeader
+                eyebrow="Events"
+                title={
+                  <>
+                    Open houses &amp;
+                    <br />
+                    events
+                  </>
+                }
+                subtitle="Walk through Kavin Mittal's listings in person across Calgary and Chestermere."
+              />
+              <Reveal delay={150}>
+                <Link href="/events" className="btn-ghost">
+                  View all events →
+                </Link>
               </Reveal>
-            ))}
+            </div>
+
+            <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {eventsByDate.slice(0, 3).map((event, i) => (
+                <Reveal key={event.id} delay={i * 90}>
+                  <EventCard event={event} />
+                </Reveal>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="container-x py-24">

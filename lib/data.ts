@@ -292,33 +292,85 @@ export const getProperty = (id: string) =>
 
 export const featuredProperties = properties.filter((p) => p.featured);
 
-export const testimonials = [
+// ── Events ───────────────────────────────────────────────────
+export interface EventItem {
+  id: string;
+  title: string;
+  /** ISO date, e.g. "2026-07-12" */
+  date: string;
+  /** Optional time window, e.g. "1:00–4:00 PM" */
+  time?: string;
+  location: string;
+  /** Short label, e.g. "Open House", "Seminar", "Community" */
+  category?: string;
+  blurb?: string;
+  /** Optional RSVP / details link */
+  href?: string;
+}
+
+export const events: EventItem[] = [
   {
-    quote:
-      "Kavin sold our Mission condo $90K over ask in nine days. The AI valuation was within 1% of the final price — uncanny.",
-    name: "Priya & Daniel R.",
-    role: "Sellers — Mission",
+    id: "open-house-cornerstone-passage-2026-01-10",
+    title: "Open House",
+    date: "2026-01-10",
+    location: "167 Cornerstone Passage NE, Calgary",
+    category: "Open House",
   },
   {
-    quote:
-      "As an out-of-province investor, their commercial team handled everything. The property matcher surfaced a Quarry Park deal I'd never have found.",
-    name: "Marcus L.",
-    role: "Investor — Toronto",
+    id: "open-house-taravista-crescent-2025-11-15",
+    title: "Open House",
+    date: "2025-11-15",
+    location: "32 Taravista Crescent NE, Calgary",
+    category: "Open House",
   },
   {
-    quote:
-      "Refined, responsive, and genuinely strategic. Buying in Aspen Woods felt like having a private concierge for the whole market.",
-    name: "The Okafor Family",
-    role: "Buyers — Aspen Woods",
+    id: "open-house-martin-crossing-2025-09-27",
+    title: "Open House",
+    date: "2025-09-27",
+    location: "5215 Martin Crossing Drive NE, Calgary",
+    category: "Open House",
+  },
+  {
+    id: "open-house-martin-crossing-2025-09-13",
+    title: "Open House",
+    date: "2025-09-13",
+    location: "5215 Martin Crossing Drive NE, Calgary",
+    category: "Open House",
+  },
+  {
+    id: "open-house-merganser-chestermere-2024-10-06",
+    title: "Sunday Open House",
+    date: "2024-10-06",
+    location: "Unit 801, 33 Merganser Dr W, Chestermere",
+    category: "Open House",
+  },
+  {
+    id: "open-house-lodge-crescent-2024-01-07",
+    title: "Open House",
+    date: "2024-01-07",
+    location: "5612 Lodge Crescent SW, Calgary",
+    category: "Open House",
+  },
+  {
+    id: "open-house-lodge-crescent-2024-01-06",
+    title: "Open House",
+    date: "2024-01-06",
+    location: "5612 Lodge Crescent SW, Calgary",
+    category: "Open House",
+  },
+  {
+    id: "open-house-calgary-2023-09-17",
+    title: "Open House",
+    date: "2023-09-17",
+    location: "Calgary, AB",
+    category: "Open House",
   },
 ];
 
-export const stats = [
-  { value: "$1.4B", label: "In closed volume" },
-  { value: "1,200+", label: "Calgary families served" },
-  { value: "9 days", label: "Avg. days on market" },
-  { value: "98.6%", label: "List-to-sale ratio" },
-];
+/** Events sorted most-recent first. */
+export const eventsByDate = [...events].sort((a, b) =>
+  b.date.localeCompare(a.date)
+);
 
 // ── Real contact & profile data ──────────────────────────────
 export const contact = {

@@ -187,9 +187,8 @@ export default function HomeValuation() {
                 <p className="mb-1 font-semibold text-gold">Market insight</p>
                 {hood} is currently a{" "}
                 {neighbourhoodFactors[hood] > 650 ? "seller's" : "balanced"}{" "}
-                market. Homes of this profile are selling near{" "}
-                <span className="text-ivory">98.6%</span> of list. Book a session
-                with Kavin Mittal to refine this with live comparables.
+                market. Book a session with Kavin Mittal to refine this estimate
+                with live comparables.
               </div>
 
               <a href="/contact" className="btn-ghost mt-5 w-full">
