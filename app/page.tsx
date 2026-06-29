@@ -63,8 +63,8 @@ export default function Home() {
               className="mt-7 max-w-lg text-lg leading-relaxed text-ivory/70 animate-fade-up"
               style={{ animationDelay: "0.25s", opacity: 0 }}
             >
-              Kavin Mittal pairs concierge-level residential &amp; commercial
-              expertise with an AI suite that values, matches, and finances —
+              Kavin Mittal pairs concierge-level real estate experience with
+              an AI suite that values, matches, and finances —
               faster than any brokerage in Alberta.
             </p>
             <div
@@ -77,6 +77,27 @@ export default function Home() {
               <Link href="/ai-tools" className="btn-ghost">
                 Try the AI Suite
               </Link>
+            </div>
+
+            <div
+              className="mt-10 inline-flex items-center gap-4 rounded-2xl border border-white/10 bg-ink-900/50 p-3 pr-6 backdrop-blur-md animate-fade-up"
+              style={{ animationDelay: "0.55s", opacity: 0 }}
+            >
+              <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-gold/40">
+                <Image
+                  src="/kavin.jpeg"
+                  alt="Kavin Mittal"
+                  fill
+                  sizes="56px"
+                  className="object-cover object-top"
+                />
+              </div>
+              <div>
+                <p className="font-display text-base text-ivory">Kavin Mittal</p>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-gold">
+                  REALTOR® · Calgary
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -101,7 +122,7 @@ export default function Home() {
                 Every listing, <span className="gold-text">always current</span>
               </h2>
               <p className="mx-auto mt-5 max-w-lg text-lg text-ivory/70">
-                Kavin&apos;s active residential and commercial listings live on
+                Kavin&apos;s active real estate listings live on
                 Realtor.ca — updated in real time, straight from the source.
               </p>
               <div className="mt-9 flex flex-wrap justify-center gap-4">
@@ -170,10 +191,11 @@ export default function Home() {
         <Reveal>
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
             <Image
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
-              alt="Luxury Calgary interior"
+              src="/kavin.jpeg"
+              alt="Kavin Mittal — Calgary REALTOR®"
               fill
-              className="object-cover"
+              sizes="(min-width: 1024px) 50vw, 90vw"
+              className="object-cover object-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent" />
           </div>

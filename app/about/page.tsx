@@ -8,7 +8,7 @@ import { agent, languages, specialties } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About — Kavin Mittal Real Estate Calgary",
   description:
-    "Kavin Mittal is a Calgary residential and commercial real estate professional serving clients in English, Punjabi, Hindi, and Urdu.",
+    "Kavin Mittal is a Calgary real estate professional serving clients in English, Punjabi, Hindi, and Urdu.",
 };
 
 const values = [
@@ -63,8 +63,8 @@ export default function AboutPage() {
               recommendation with real Calgary data, not guesswork.
             </p>
             <p>
-              From a downtown condo to a foothills estate, residential and
-              commercial clients get a single trusted partner — fluent in
+              From a downtown condo to a foothills estate, every real estate
+              client gets a single trusted partner — fluent in
               English, Punjabi, Hindi, and Urdu.
             </p>
           </div>

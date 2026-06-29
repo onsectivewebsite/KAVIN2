@@ -93,8 +93,6 @@ export const contact = {
   phone: "(403) 430-0050",
   phoneHref: "+14034300050",
   email: "Kavinmittal9@gmail.com",
-  addressLines: ["12318 Barlow Trail NE, Unit 105", "Calgary, AB T3N 2A9"],
-  mapQuery: "12318 Barlow Trail NE Unit 105, Calgary, AB T3N 2A9",
 };
 
 export const languages = ["English", "Punjabi", "Hindi", "Urdu"];
@@ -115,7 +113,7 @@ export const agent = {
   name: "Kavin Mittal",
   role: "REALTOR® · Calgary, AB",
   bio: "Kavin Mittal is a Calgary-based real estate professional serving buyers, sellers, and investors across the city. He works with clients in English, Punjabi, Hindi, and Urdu, with expertise spanning luxury homes, condos, multi-family, residential development, and investment.",
-  image: img("photo-1560250097-0b93528c311a", 600),
+  image: "/kavin.jpeg",
   languages,
   specialties,
 };

@@ -71,7 +71,7 @@ export default function ServicesPage() {
             One firm for every <span className="gold-text">move you make.</span>
           </>
         }
-        subtitle="Residential, commercial, and investment expertise under one roof — amplified by an AI suite that does the heavy analysis for you."
+        subtitle="Real estate and investment expertise under one roof — amplified by an AI suite that does the heavy analysis for you."
       />
 
       <section className="container-x py-20">

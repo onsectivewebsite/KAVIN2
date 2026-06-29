@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
-              Calgary residential &amp; commercial real estate. Refined advice,
+              Calgary real estate. Refined advice,
               remarkable results — across Alberta.
             </p>
             <p className="mt-4 text-xs text-muted">
@@ -54,9 +54,6 @@ export default function Footer() {
               Office
             </h4>
             <ul className="mt-5 space-y-3 text-sm text-muted">
-              {contact.addressLines.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
               <li className="pt-2">
                 <a
                   href={`tel:${contact.phoneHref}`}

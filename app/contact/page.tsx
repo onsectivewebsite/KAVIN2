@@ -7,11 +7,10 @@ import { contact, languages } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contact — Kavin Mittal Real Estate Calgary",
   description:
-    "Book a consultation with Kavin Mittal. 12318 Barlow Trail NE, Unit 105, Calgary, AB.",
+    "Book a consultation with Kavin Mittal — real estate across Calgary and Alberta.",
 };
 
 const details = [
-  ["Visit", contact.addressLines],
   ["Call", [contact.phone]],
   ["Email", [contact.email]],
   ["Languages", [languages.join(" · ")]],
@@ -67,7 +66,7 @@ export default function ContactPage() {
                     ◉
                   </div>
                   <p className="mt-3 font-display text-lg text-ivory">
-                    Barlow Trail NE, Calgary
+                    Calgary &amp; Alberta
                   </p>
                 </div>
               </div>

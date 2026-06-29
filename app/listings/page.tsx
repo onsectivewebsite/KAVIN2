@@ -33,8 +33,8 @@ export default function ListingsPage() {
                 <span className="gold-text">Realtor.ca</span>
               </h2>
               <p className="mx-auto mt-4 max-w-md text-muted">
-                See every one of Kavin Mittal&apos;s active residential and
-                commercial listings — updated in real time, straight from the
+                See every one of Kavin Mittal&apos;s active real estate
+                listings — updated in real time, straight from the
                 source.
               </p>
               <div className="mt-9 flex flex-wrap justify-center gap-4">

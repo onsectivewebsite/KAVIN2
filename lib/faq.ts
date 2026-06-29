@@ -90,7 +90,7 @@ export const faqs: QA[] = [
   {
     category: "About",
     q: "Where is Kavin Mittal located?",
-    a: "The office is at 12318 Barlow Trail NE, Unit 105, Calgary, AB T3N 2A9. Call (403) 430-0050 or email Kavinmittal9@gmail.com — Kavin typically responds within the hour. Service is available in English, Punjabi, Hindi, and Urdu.",
+    a: "Kavin Mittal serves clients across Calgary and Alberta. Call (403) 430-0050 or email Kavinmittal9@gmail.com — Kavin typically responds within the hour. Service is available in English, Punjabi, Hindi, and Urdu.",
     keywords: ["location", "office", "address", "where are you", "phone", "call", "contact", "email", "hours"],
   },
   {

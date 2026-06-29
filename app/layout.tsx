@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Kavin Mittal — Luxury Real Estate in Calgary",
   description:
-    "Kavin Mittal is a Calgary residential & commercial REALTOR® offering AI-powered home valuation, property matching, and concierge service across Alberta. Serving clients in English, Punjabi, Hindi, and Urdu.",
+    "Kavin Mittal is a Calgary real estate REALTOR® offering AI-powered home valuation, property matching, and concierge service across Alberta. Serving clients in English, Punjabi, Hindi, and Urdu.",
   keywords: [
     "Calgary real estate",
     "luxury homes Calgary",
